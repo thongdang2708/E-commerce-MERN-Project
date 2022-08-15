@@ -1,0 +1,57 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* CSS change when there is no products in cart */
+.cart {
+    margin-bottom: 800px;
+}
+
+/* CSS change when there is only one product in cart */
+.one {
+    margin-bottom: 250px;
+}
+
+/* CSS change when there are many products in cart */
+
+.page {
+    margin-bottom: 50px;
+}
+
+/* CSS change for warning whether quantity reaches a number of available products in stock */
+
+.outstock {
+    inline-size: 10rem;
+}
+
+/* CSS for navbar when user logged in*/
+.navbarshow {
+    opacity: 0;
+    transition: opacity 0.3s ease-in
+}
+
+.navbarshow.active {
+    opacity: 1
+}
+
+/* CSS for navbar when an admin logged in */
+
+.navbarshowadmin {
+    opacity: 0;
+    transition: opacity 0.3s ease-in;
+}
+
+.navbarshowadmin.active {
+    opacity: 1
+}
+
+/* Remove arrows from input number */
+
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none; 
+}
+
