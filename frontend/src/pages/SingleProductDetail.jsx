@@ -230,7 +230,7 @@ function SingleProductDetail() {
             </div>
             )}
 
-            {product.countInStock > 0 && user && !user.isAdmin ? (
+            {(product.countInStock > 0 && user!== null && !user.isAdmin) || (product.countInStock > 0 && user=== null) ? (
                 <form onSubmit={handleSubmitAddToCart}>
                 <button type="submit" className='btn btn-lg w-full hover:outline-0'>
                     Add To Cart 

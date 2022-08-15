@@ -12,7 +12,7 @@ import { useNavigate } from 'react-router-dom';
 
 function ProductListOfAdmin() {
 
-    //Global state of a product list
+    //Global state of a product list, and user who logged in
 
     let {productList, productListLoading, productListError, productListMessage} = useSelector(state => state.productList);
     let {user} = useSelector(state => state.user);

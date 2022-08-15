@@ -197,10 +197,12 @@ exports.updateDeliverByAdmin = asyncHandler(async (req, res, next) => {
         throw new Error("Order not found!")
     };
 
+    let {isDelivered, deliveredAt} = req.body;
+
     let updateOrder = await Order.findByIdAndUpdate(req.params.orderId, 
         {
-            isDelivered: true,
-            deliveredAt: Date.now()
+            isDelivered: isDelivered,
+            deliveredAt: deliveredAt
         },
         {   
             new: true,
