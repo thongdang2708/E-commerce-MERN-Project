@@ -86,7 +86,7 @@ function PaymentSelection() {
     <div>
         <NavbarComponentForCheckOut /> 
 
-        <div className='w-10/12 mx-auto mb-96'>
+        <div className='w-10/12 mx-auto mt-8 mb-96'>
             <Link to="/shippingaddress">
             <div className='btn btn-lg bg-sky-500 text-white hover:bg-slate-200 hover:text-sky-500 my-5'>
                 Back

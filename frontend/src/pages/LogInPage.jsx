@@ -98,7 +98,7 @@ function LogInPage() {
     };
 
   return (
-    <div className='mt-20 w-10/12 mx-auto p-8 rounded-lg shadow-lg border-2 mb-64'>
+    <div className='mt-20 w-10/12 mx-auto p-8 rounded-lg shadow-lg border-2 mb-72'>
       <h1 className='text-center font-bold text-black text-3xl'> Sign In Page! </h1>
 
       <div className='form'>
