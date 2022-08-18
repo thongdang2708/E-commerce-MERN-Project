@@ -31,10 +31,9 @@ app.use(errorHandler);
 if (process.env.NODE_ENV === "production") {
     app.use(express.static("/Users/thongdang/Desktop/dev/e-commerce-project/frontend/build"))
 
-    app.get("*", (req, res) => res.sendFile(path.resolve("/Users/thongdang/Desktop/dev/e-commerce-project/", "frontend", "build", "index.html")))
+    app.get("*", (req, res) => res.sendFile("/Users/thongdang/Desktop/dev/e-commerce-project/", "frontend", "build", "index.html"));
 }
 
-console.log(path.join("/Users/thongdang/Desktop/dev/e-commerce-project", "/frontend/build"));
 //Port to listen
 
 app.listen(PORT, function () {
