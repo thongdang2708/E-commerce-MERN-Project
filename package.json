@@ -1,6 +1,10 @@
 {
   "name": "e-commerce-project",
   "version": "1.0.0",
+  "engines": {
+    "node": "v14.15.0",
+    "npm": "8.5.5"
+  },
   "description": "E-commerce Project",
   "main": "server.js",
   "scripts": {
