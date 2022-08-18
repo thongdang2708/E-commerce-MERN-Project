@@ -2,8 +2,8 @@
   "name": "e-commerce-project",
   "version": "1.0.0",
   "engines": {
-    "node": "v14.15.0",
-    "npm": "8.5.5"
+    "node": "14.x",
+    "npm": "8.x"
   },
   "description": "E-commerce Project",
   "main": "server.js",
